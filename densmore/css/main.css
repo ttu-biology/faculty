@@ -4,6 +4,7 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: PapayaWhip;
 }
 
 h1{
@@ -32,7 +33,7 @@ article {
 
 section {
   width: 300px;
-  height: 300px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,11 +41,14 @@ section {
   text-align: center;
   margin: 20px;
   color: PapayaWhip;
+  border-color: PapayaWhip;
+  border-width: 3px;
+  border-style: solid;
 }
 
 .tutorial{
   transistion-timing-function: ease-out;
-  transition: color 0.7s, padding-left 0.4s, padding-right 0.4s;
+  transition: border-width 0.4s, border-color 0.4s, margin 0.4s, font-size 0.7s, color 0.7s;
 }
 
 a{
@@ -52,7 +56,26 @@ a{
 }
 
 .tutorial:hover{
-  padding-left: 30px;
-  padding-right: 30px;
+  margin: 17px;
   color: LawnGreen;
+  font-size: 1.1em;
+  border-width: 6px;
+  border-color: white;
+}
+
+.spacer {
+  border-color: black;
+  background: black;
+}
+
+@media screen and (max-width: 1760px) {
+  article {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1328px) {
+  article {
+    width: 100%
+  }
 }
